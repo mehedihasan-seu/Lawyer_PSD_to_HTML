@@ -1,0 +1,325 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    min-height: 8vh;
+}
+.navbar {
+    padding: 15px 0px;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #204f87;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    
+}
+.banner{
+    background-image: url(../images/lawyerBanner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    position: relative;
+}
+.hg{
+    min-height: 500px;
+}
+.hg h1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 65px;
+}
+.icon {
+    font-size: 35px;
+    color: #ffffff;
+    animation: up-down 1.5s infinite linear;
+    animation-direction: alternate;
+}
+@keyframes up-down {
+	0% {
+		transform: translateY(-40PX);
+	}
+}
+.who-we-are{
+    margin-top: 100px;
+}
+.whoweare-content{
+    color: #b1b0b1;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+}
+.heading{
+    margin-top: 70px;
+}
+.heading h1 {
+    position: relative;
+    text-transform: uppercase;
+    font-family: "Montserrat Bold",sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    padding: 15px 0px;
+    margin-bottom: 10px;
+}
+.heading h4{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: "Montserrat Bold",sans-serif;
+    color: tomato;
+    font-weight: 700;
+}
+.heading p{
+    font-family: "Open Sans Bold",sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #929dcf;
+}
+.heading h1::before{
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 5px;
+    top: 0;
+    left: 0;
+    background-color: tomato;
+    transition: 0.5s all ease-in-out;
+}
+.heading:hover h1::before{
+    width: 10%;
+}
+
+.vb{
+    padding: 50px 0px;
+    color: #28377e;
+}
+.cl{
+    color: #28377e;
+}
+.heading-two h1 {
+    position: relative;
+    text-transform: uppercase;
+    font-family: "Montserrat Bold",sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    padding-top: 11px;
+    
+}
+.heading-two h1::before{
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 5px;
+    top: 0;
+    left: 40%;
+    background-color: tomato;
+    transition: 0.5s all ease-in-out;
+}
+.heading-two:hover h1::before{
+    width: 30%;
+    left: 30%;
+}
+
+.what-we-do{
+    padding-bottom: 50px;
+    background-color: #f8f8f8;
+    background-image: url(../images/profile-background.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: 900px;
+    position: relative;
+    margin-top: 120px;
+}
+.what-we{
+    position: relative;
+    color: #ffffff;
+}
+.what-we::before{
+    content: '';
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    transition: 0.4s all ease-in-out;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,2d3185+100&0+0,1+100 */
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(45,49,133,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(45,49,133,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(45,49,133,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#2d3185',GradientType=0 ); /* IE6-9 */
+
+} 
+.what-we:hover::before{
+    height: 100%;
+} 
+.what-we:hover .what-we-content{
+    opacity: 1;
+    top: 50%;
+} 
+.what-we-content{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.7s all ease-in-out;
+    opacity: 0;
+}
+.arrow{
+    position: absolute;
+    top: 80%;
+    left: 0%;
+    transform: translate(-50%,-80%);
+    font-size: 20px;
+    transition: 0.7s all ease-in-out;
+    opacity: 0;
+}
+.what-we:hover .arrow{
+    opacity: 1;
+    left: 50%;
+}
+.format {
+    margin-bottom: 10px;
+}
+.content{
+    padding: 150px 0px;
+}
+.profile{
+    position: relative;
+    color: #ffffff;
+}
+.profile::before{
+    content: '';
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    transition: 0.4s all ease-in-out;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,2d3185+100&0+0,1+100 */
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(45,49,133,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(45,49,133,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(45,49,133,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#2d3185',GradientType=0 ); /* IE6-9 */
+
+}
+.profile:hover::before{
+    height: 70%;
+} 
+.profile:hover .profile-name{
+    opacity: 1;
+    top: 80%;
+} 
+.profile-name{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%,-50%);
+    text-transform: uppercase;
+    transition: 0.7s all ease-in-out;
+    opacity: 0;
+    margin-left: 35px;
+} 
+.fg{
+    margin-top: 40px;
+    color: white;
+}
+.description{
+    padding: 110px 0px;
+}
+.descrip-header{
+    padding-bottom: 70px;
+}
+.descrip-header h1{
+    color: #28377e;
+}
+.description h2{
+    color: #28377e;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.description p{
+    color: #b1b0b1;
+    font-family: "Open Sans Bold",sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px 0px;
+}
+.description h5{
+    color: tomato;
+    text-transform: uppercase;
+    font-family: "Open Sans Bold",sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+.description h5:hover{
+    color: rgb(197, 63, 39);
+}
+.headig h4:hover{
+    color: rgb(197, 63, 39);
+}
+.profile-banner{
+    background-image: url(../images/profileBanner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+}
+.form-content{
+    background-color: #28377e;
+    color: white;
+}
+.main{
+    padding: 100px 0px;
+}
+form{
+    align-items: center;
+    justify-content: center;
+}
+form input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    padding: 5px 0;
+    margin-top: 35px;
+}
+input[type="button"] {
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    padding: 10px 25px;
+    color: #fff;
+    border: 1px solid #ff5100;
+    font-size: 18px;
+}
+input[type="button"]:hover {
+    background-color: tomato;
+}
+footer{
+    background-color: #0c1234;
+    min-height: 10vh;
+    color: #929dcf;
+}
+footer nav a p{
+    font-family: 'Open Sans',sans-serif;
+    color: #929dcf;
+    font-size: 14px!important;
+    margin-top: 5px;
+}
+footer ul li{
+    display: inline;
+}
+footer ul li a i{
+    color: #929dcf;
+}
+.nav-item{
+
+}
+.fn{
+    justify-content: space-between;
+}
